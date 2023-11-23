@@ -1,0 +1,339 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins','sans-serif';
+    font-size: 18px;
+    padding: 1px;
+}
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    [class*="col-"] {
+      width: 100%;
+    }
+  }
+
+body{
+    padding-top: 100px;
+}
+
+/*-----------------*/
+.carousel-inner{
+     height: 300px;
+}
+
+.item{
+    height: 100% !important;
+    width:  100% !important;
+    border: 1px solid red;
+}
+/*-----------------------------nav logo------------------------*/
+
+
+
+.internet{
+    font-family: 'poppins', sans-serif;
+    font-size: 10px;
+    margin: -5px;
+    margin-left: 1px;
+}
+h1{
+    font-family: 'poppins','sans-serif';
+   
+}
+button a:hover{
+    color: white;
+}
+button a{
+    background-color: red;
+    padding: 10px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: white;
+    
+}
+/*-------------- nav hover---------------*/
+.nav a{
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #f2f2f2;
+}
+.nav a:hover{
+    color: #000;
+    background: #ddd;
+}
+.nav a:active{
+    background: #4caf50;
+}
+/*--------------madhupur---------------*/
+.madhupur img{
+    width: 60px;
+    transition: 0.5s;
+}
+.madhupur img:hover{
+  transform: translateY(-15px);
+}
+
+
+
+/*--------------log free---------------*/
+
+.log img{
+    width: 60px;
+    transition: 0.5s;
+}
+.log img:hover {
+  transform: translateY(-20px);
+}
+
+
+/* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+
+@media (min-width: 1281px) {
+  
+    /* CSS */
+    .log img{
+        height: auto;
+        width: auto;
+        
+    }
+    
+  }
+  
+  /* 
+    ##Device = Laptops, Desktops
+    ##Screen = B/w 1025px to 1280px
+  */
+  
+  @media (min-width: 1025px) and (max-width: 1280px) {
+    
+    /* CSS */
+    .log img{
+        height: auto;
+        width: 500px;
+        
+    }
+  }
+  
+  /* 
+    ##Device = Tablets, Ipads (portrait)
+    ##Screen = B/w 768px to 1024px
+  */
+  
+  @media (min-width: 768px) and (max-width: 1024px) {
+    
+    /* CSS */
+    .log img{
+        height: auto;
+        width: 300px;
+        
+    }
+    
+  }
+  
+  /* 
+    ##Device = Tablets, Ipads (landscape)
+    ##Screen = B/w 768px to 1024px
+  */
+  
+  @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    
+    /* CSS */
+    .log img{
+        height: auto;
+        width: 300px;
+        
+    }
+    
+  }
+
+
+/*--------------Contact Us---------------*/
+.contact-form{
+    position: relative;
+    min-height: 100vh;
+    z-index: 0;
+    background: #69275c;
+    border-radius: 10px;
+    padding: 30px;
+    justify-content: center;
+    display: grid;
+    grid-template-rows: 1fr auto 1fr;
+    align-items: center;
+}
+.container{
+    max-width: 800px;
+    margin-top: 0 auto;
+}
+.contact-form h1{
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 400;
+    color: #fff;
+    font-family: 'poppins';
+}
+.contact-form h2{
+    line-height: 40px;
+    margin-bottom: 5px;
+    font-size: 30px;
+    font-weight: 500;
+    color: #69275c;
+    text-align: center;
+}
+.contact-form .main{
+    position: relative;
+    display: flex;
+    margin: 30px 0;
+}
+.content{
+    flex-basis: 50%;
+    padding: 3em 3em;
+    background: #fff;
+    box-shadow: 2px 9px 49px -17px rgba(156, 39, 148, 0.1);
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+.form-img{
+    flex-basis: 50%;
+    background: #f0f4f8;
+    background-size: cover;
+    padding: 40px;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    align-items: center;
+    display: grid;
+}
+.form-img img{
+    max-width: 100%;
+}
+.btn,
+button,
+input{
+    border-radius: 35px;
+}
+.btn:hover,
+button:hover{
+    color: #97359c;
+    transition: 0.5s ease;
+}
+.contact-form form{
+    margin: 30px 0;
+}
+.contact-form input,
+textarea{
+    outline: none;
+    margin-bottom: 15px;
+    font-stretch: 16px;
+    color: #999;
+    padding: 14px 20px;
+    width: 100%;
+    display: inline-block;
+    box-sizing: border-box;
+    border: none;
+    background: #fcfcfc;
+    transition: 0.3s ease;
+}
+.contact-form input:focus{
+    background: transparent;
+    border: 1px solid #69275c;
+}
+.contact-form button{
+    font-size: 18px;
+    color: #fff;
+    width: 100%;
+    background: #69275c;
+    font-weight: 600;
+    transition: 0.3s ease;
+    padding: 14px 15px;
+    border: 1px solid #69275c;
+
+}
+@media(max-width:736px){
+    .contact-form .main{
+        flex-direction: column;
+    }
+    .contact-form form{
+        margin-top: 30px;
+        margin-bottom: 10px;
+
+    }
+    .form-img{
+        border-radius: 0;
+        border-bottom-left-radius: 8px;
+        border-bottom-right-radius: 8px;
+        order: 2;
+    }
+    .content{
+        order: 1;
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+    }
+}
+
+
+
+
+/*------------------------social-media section-----------------------------*/
+
+#social-media{
+    background: #f8f9fa;
+    padding:100px 0;
+}
+#social-media p{
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 30;
+}
+.social-icons img{
+    width: 60px;
+    transition: 0.5s;
+}
+.social-icons a:hover img{
+  transform: translateY(-10px);
+}
+
+/*---------------------------------footer-section-----------------------------------------*/
+#footer{
+    background-image: linear-gradient( #a517ba,#5f1782 );
+    color:#fff;
+}
+.footer-img{
+    width:100%;
+}
+.footer-box{
+    padding:20px;
+}
+.footer-box img{
+   width:120px;
+   margin-bottom:20px;
+}
+.footer-box .form-control{
+    box-shadow: none !important;
+    border:none;
+    border-radius: 0;
+    margin-top: 25px;
+    max-width: 250;
+}
+.footer-box .btn-primary{
+    box-shadow: none !important;
+    border:none;
+    border-radius: 0;
+    margin-top: 30px;
+    background-image: linear-gradient( #a517ba,#5f1782 );
+
+}
+hr{
+    background-color: #fff;
+}
+.copyright{
+    margin-bottom: 0;
+    padding-bottom: 20px;
+    text-align: center;
+}
